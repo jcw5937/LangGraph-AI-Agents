@@ -20,6 +20,24 @@ The agent answers questions by reasoning through them step by step rather than r
 
 Conversation history is maintained across turns, so the agent always has full context when deciding what to do next.
 
+## Key Takeaways
+
+**What is the ReAct pattern, and why does it outperform single-shot prompting on multi-step tasks?**
+
+ReAct stands for Reasoning and Acting. Instead of answering in one shot, the agent loops through Thought, Action, PAUSE, and Observation steps repeatedly until it reaches a final answer. This outperforms single-shot prompting on multi-step tasks because the model can pause after each tool call, incorporate the result, and decide what to do next based on new information rather than having to guess everything upfront.
+
+**How is conversation history structured and passed to the model?**
+
+Conversation history is passed as a list of dictionaries, where each dictionary has a `role` and `content` field. The role is either `system`, `user`, or `assistant`. The system message sets the agent's behavior upfront. User messages contain either the human's input or observations fed back in from tool calls. Assistant messages contain the model's responses. The full list is passed to the model on every call so it has complete context.
+
+**Why does constraining tools improve agent reliability?**
+
+Giving an agent a smaller, well-defined set of tools makes its behavior more predictable and easier to test. If the agent has unlimited tools or vague tool definitions, it's harder to anticipate what it will do and harder to catch errors. Constrained tools also make it easier to write evals, because you can test whether the agent is choosing the right tool for a given input.
+
+**How do system prompts shape agent behavior and tool usage?**
+
+The system message is the first thing in the conversation history and sets the rules for everything that follows. It tells the model what persona to adopt, what tools are available and how to use them, and what format to respond in. In this ReAct agent, the system prompt teaches the model the Thought/Action/PAUSE/Observation format and defines the exact syntax for calling each tool — without it the model would respond conversationally with no structure.
+
 ---
 
 ## Tools
