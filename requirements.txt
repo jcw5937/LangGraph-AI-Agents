@@ -6,3 +6,6 @@ langgraph
 langchain_openai
 langchain_community
 pygraphviz
+tavily
+bs4
+ddgs
