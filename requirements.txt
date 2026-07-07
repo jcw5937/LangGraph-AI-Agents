@@ -9,5 +9,6 @@ pygraphviz
 tavily
 bs4
 ddgs
+matplotlib
 langgraph-checkpoint-sqlite
 langchain-anthropic
