@@ -3,11 +3,11 @@ openai
 python-dotenv
 httpx
 langgraph
-langgraph-checkpoint-sqlite
 langchain_openai
-langchain_anthropic
 langchain_community
 pygraphviz
 tavily
 bs4
 ddgs
+langgraph-checkpoint-sqlite
+langchain-anthropic
