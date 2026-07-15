@@ -6,7 +6,10 @@
       "Bash(python3 *)",
       "Bash(pip show *)",
       "Bash(ant auth *)",
-      "Bash(pip install *)"
+      "Bash(pip install *)",
+      "Bash(jupyter nbconvert *)",
+      "Bash(echo \"=== exit: $? ===\")",
+      "Bash(echo \"--- exit $? ---\")"
     ]
   }
 }
