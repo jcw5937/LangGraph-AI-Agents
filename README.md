@@ -2,7 +2,7 @@
 
 # Part 1: ReAct Agent from Scratch
 
-A simple AI agent built from scratch in Python, following the **ReAct (Reasoning + Acting)** pattern introduced in the paper [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/pdf/2303.17651).
+A simple AI agent built from scratch in Python, following the **ReAct (Reasoning + Acting)** pattern introduced in the paper [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/pdf/2210.03629).
 
 This is Part 1 of an ongoing project built while following the [DeepLearning.AI AI Agents in LangGraph](https://learn.deeplearning.ai) course.
 
