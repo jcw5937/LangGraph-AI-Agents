@@ -67,14 +67,4 @@ Keeping the tool set small was a deliberate choice for this first version — th
 - [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 - An OpenAI API key
 
-### Setup
 
-1. Clone the repo
-```bash
-   git clone https://github.com/yourusername/AI-Agent-Basics.git
-   cd AI-Agent-Basics
-```
-
-2. Open in VS Code and reopen in container when prompted
-
-3. Create a `.env` file in the project root:
